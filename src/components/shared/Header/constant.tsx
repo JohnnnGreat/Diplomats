@@ -9,11 +9,12 @@ export const headerNavigations = [
    },
 
    {
-      title: "Special Services",
-      path: "/special-services",
+      title: "Why Us",
+      path: "/why-us",
    },
 
    { title: "Registration", path: "/registration" },
    { title: "About Us", path: "/about" },
+   
    { title: "Contact Us", path: "/contact-us" },
 ];

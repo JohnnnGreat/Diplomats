@@ -6,6 +6,7 @@ import CoursesPreview from "./CoursesPreview";
 const HomePage = () => {
    return (
       <>
+         <title>Diplomats</title>
          <Hero />
          <MissionVisionValues />
          <CoursesPreview />

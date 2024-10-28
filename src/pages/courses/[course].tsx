@@ -19,6 +19,7 @@ const CourseInfo = () => {
 
    return (
       <div>
+         <title>{courseInformation?.title}</title>
          <PagesHeader>{courseInformation?.title}</PagesHeader>
          <div className="max-w-screen-lg mx-auto mt-12 px-4">
             <h1 className="font-bold text-2xl md:text-3xl">{courseInformation?.title}</h1>
