@@ -1,5 +1,6 @@
 import React from "react";
 import Svg from "../../../../public/blueelip.svg";
+import Link from "next/link";
 
 const Hero = () => {
    return (
@@ -89,14 +90,20 @@ const Hero = () => {
             {/* Buttons */}
             <div className="mt-8 flex justify-center space-x-4">
                {/* Button 1: Explore Courses */}
-               <button className="bg-black text-white py-2 px-4 md:py-3 md:px-6 rounded-md text-[16px] transition-all duration-300 hover:scale-105 hover:bg-gray-800">
+               <Link
+                  href="/courses"
+                  className="bg-black text-white py-2 px-4 md:py-3 md:px-6 rounded-md text-[16px] transition-all duration-300 hover:scale-105 hover:bg-gray-800"
+               >
                   Explore Courses
-               </button>
+               </Link>
 
                {/* Button 2: Contact Us */}
-               <button className="border-2 border-brandColor text-black py-2 px-4 md:py-3 md:px-6 rounded-md text-[16px] transition-all duration-300 hover:bg-brandColor hover:text-white hover:scale-105">
+               <Link
+                  href="/contact"
+                  className="border-2 border-brandColor text-black py-2 px-4 md:py-3 md:px-6 rounded-md text-[16px] transition-all duration-300 hover:bg-brandColor hover:text-white hover:scale-105"
+               >
                   Contact Us
-               </button>
+               </Link>
             </div>
          </div>
       </section>
