@@ -3,7 +3,7 @@ import { coursesPreview } from "./constant";
 
 const CoursesPreview = () => {
    return (
-      <div className="min-h-screen bg-[#000000c2] flex flex-col items-center justify-center p-8">
+      <div className="min-h-screen overflow-hidden bg-[#000000c2] flex flex-col items-center justify-center p-8">
          <div className="max-w-[1000px]">
             {" "}
             {/* Heading */}

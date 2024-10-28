@@ -3,12 +3,12 @@ import Svg from "../../../../public/blueelip.svg";
 
 const Hero = () => {
    return (
-      <section className="relative bg-white h-screen-minus-112 p-3 flex justify-center items-center text-center">
+      <section className="relative bg-white overflow-hidden h-screen-minus-112 p-3 flex justify-center items-center text-center">
          {/* Decorative shapes */}
 
-         <div className="absolute top-10 left-10 w-16 h-16 border-8 border-brandColor rounded-full animate-slow-spin"></div>
-         <div className="absolute top-20 right-20 w-16 h-16 border-8 border-gray-300 transform rotate-45 animate-slow-spin-reverse"></div>
-         <div className="absolute bottom-10 right-10 w-16 h-16 border-8 border-brandColor rounded-full animate-slow-spin"></div>
+         <div className="hidden md:block absolute top-10 left-10 w-16 h-16 border-8 border-brandColor rounded-full animate-slow-spin"></div>
+         <div className="hidden md:block absolute top-20 right-20 w-16 h-16 border-8 border-gray-300 transform rotate-45 animate-slow-spin-reverse"></div>
+         <div className="hidden md:block absolute bottom-10 right-10 w-16 h-16 border-8 border-brandColor rounded-full animate-slow-spin"></div>
 
          {/* Blur Elipsis */}
 
