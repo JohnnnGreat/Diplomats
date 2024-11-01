@@ -9,7 +9,7 @@ const MissionVisionValues = () => {
                <div className="flex gap-x-4 items-center mb-6">
                   <div className="w-[15px] bg-brandColor rounded-[10px] h-[70px]"></div>
                   {/* Title */}
-                  <h2 className="text-3xl font-bold text-gray-800 max-w-[300px]">Our Mission, Vision, and Values</h2>
+                  <h2 className="text-3xl font-bold text-gray-800 max-w-[300px]">Our Mission, Our Vision, and Our Core Value</h2>
                </div>
 
                {/* Core Values */}

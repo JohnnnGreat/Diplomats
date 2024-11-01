@@ -1,14 +1,14 @@
 export const aboutConstants = [
    {
-      title: "Mission",
+      title: "Our Mission",
       description: "Exceptional Customer Service",
    },
    {
-      title: "Vision",
+      title: "Our Vision",
       description: "Exceptional Customer Service",
    },
    {
-      title: "Our Core Values",
+      title: "Our Core Value",
       description: "Exceptional Customer Service",
    },
 ];

@@ -21,7 +21,7 @@ const Header: React.FC = () => {
                   theDiplomats
                   <span className="text-black">
                      <br />
-                     DigitalWorld.
+                     DigitalWorld
                   </span>
                </Link>
             </div>
