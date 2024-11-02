@@ -44,6 +44,13 @@ const Header: React.FC = () => {
                </ul>
             </nav>
 
+            <Link
+               href="/auth/register"
+               className="border border-brandColor py-3 px-9 font-bold rounded-sm hover:bg-brandColor hover:text-white transition-all"
+            >
+               Register
+            </Link>
+
             {/* Mobile Menu Button */}
             <button
                className="md:hidden text-gray-700"

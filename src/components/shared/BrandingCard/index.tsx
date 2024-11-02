@@ -1,30 +1,55 @@
-import React from "react";
-import { BrandingPackage } from "../constants";
+import { FC } from "react";
+import { Briefcase, Clock, DollarSign } from "lucide-react"; // Importing basic icons
 
 interface BrandingCardProps {
-   brandingPackage: BrandingPackage;
+   brandingPackage: {
+      name: string;
+      services: string[];
+      delivery: string;
+      cost: string;
+      icon: JSX.Element;
+   };
 }
 
-const BrandingCard: React.FC<BrandingCardProps> = ({ brandingPackage }) => {
+// BrandingCard component with a clean, simple design
+const BrandingCard: FC<BrandingCardProps> = ({ brandingPackage }) => {
    return (
-      <div className="border border-gray-300 rounded-lg p-6 max-w-md w-full shadow-lg bg-white font-sans transition-transform duration-200 hover:scale-105 hover:shadow-xl">
-         <h2 className="text-xl font-bold mb-2 text-gray-800">{brandingPackage.name}</h2>
-         <p className="text-green-700 font-bold text-lg mb-1">{brandingPackage.cost}</p>
-         <p className="text-gray-600 text-sm font-medium mb-4">
-            Delivery: <span className="font-normal">{brandingPackage.delivery}</span>
-         </p>
-         <div>
-            <h4 className="text-base font-semibold text-gray-700 mb-3">Included Services:</h4>
-            <ul className="list-disc pl-5 space-y-2">
+      <div className="p-5 border rounded-lg shadow-sm bg-white flex flex-col items-start space-y-4">
+         {/* Package Title with Icon */}
+         <h3 className="text-xl font-semibold text-[#333] flex flex-col gap-2">
+            {brandingPackage.icon} {/* Displaying the package icon */}
+            {brandingPackage.name}
+         </h3>
+
+         {/* Service List */}
+         <div className=" space-x-2">
+            <p className="text-sm text-gray-700 font-medium">Services:</p>
+            <ul className="list-disc list-inside space-y-1">
                {brandingPackage.services.map((service, index) => (
                   <li
                      key={index}
-                     className="text-sm text-gray-700"
+                     className="text-gray-600 text-sm"
                   >
                      {service}
                   </li>
                ))}
             </ul>
+         </div>
+
+         {/* Delivery */}
+         <div className="space-x-2 flex items-center">
+            <Clock className="w-4 h-4 text-green-500" />
+            <p className="text-gray-700 text-sm">
+               <span className="font-medium">Delivery:</span> {brandingPackage.delivery}
+            </p>
+         </div>
+
+         {/* Cost */}
+         <div className="flex items-center space-x-2">
+            <DollarSign className="w-4 h-4 text-yellow-500" />
+            <p className="text-gray-700 text-sm">
+               <span className="font-medium">Cost:</span> {brandingPackage.cost}
+            </p>
          </div>
       </div>
    );

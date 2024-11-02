@@ -1,3 +1,14 @@
+import {
+   FaRegBuilding,
+   FaPaintBrush,
+   FaIdCard,
+   FaFileInvoiceDollar,
+   FaClipboardCheck,
+   FaGlobe,
+   FaEnvelopeOpenText,
+   FaClipboard,
+} from "react-icons/fa";
+
 export type Course = {
    title: string;
    duration: string;
@@ -161,18 +172,21 @@ export const companyBrandingPackages = [
       services: ["Logo Design"],
       delivery: "24 hours",
       cost: "N3,000",
+      icon: <FaPaintBrush className="w-6 h-6 text-brandColor" />, // Icon for logo design
    },
    {
       name: "Double Company Branding",
       services: ["Logo Design", "Business Card"],
       delivery: "24 hours",
       cost: "N5,000",
+      icon: <FaClipboard className="w-6 h-6 text-brandColor" />, // Icon for business card
    },
    {
       name: "Average Company Branding",
       services: ["Logo Design", "Letterhead", "Business Card", "ID Card"],
       delivery: "48 hours",
       cost: "N10,000",
+      icon: <FaIdCard className="w-6 h-6 text-brandColor" />, // Icon for ID card
    },
    {
       name: "Premium Company Branding",
@@ -187,6 +201,7 @@ export const companyBrandingPackages = [
       ],
       delivery: "48 hours",
       cost: "N15,000",
+      icon: <FaRegBuilding className="w-6 h-6 text-brandColor" />, // Icon for premium branding (building)
    },
    {
       name: "Advance Company Branding",
@@ -203,6 +218,7 @@ export const companyBrandingPackages = [
       ],
       delivery: "72 hours",
       cost: "N40,000",
+      icon: <FaFileInvoiceDollar className="w-6 h-6 text-brandColor" />, // Icon for invoices and profiles
    },
    {
       name: "Gold Company Branding",
@@ -223,6 +239,7 @@ export const companyBrandingPackages = [
       ],
       delivery: "8 days",
       cost: "N120,000",
+      icon: <FaGlobe className="w-6 h-6 text-brandColor" />, // Icon for global service (website design)
    },
    {
       name: "Full Company Branding",
@@ -247,6 +264,7 @@ export const companyBrandingPackages = [
       ],
       delivery: "10 days",
       cost: "N150,000",
+      icon: <FaClipboardCheck className="w-6 h-6 text-brandColor" />, // Icon for comprehensive service (checklist)
    },
 ];
 
